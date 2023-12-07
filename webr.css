@@ -34,6 +34,7 @@ body, html {
 .sidebar {
     background-color: rgba(0, 0, 0);
     padding: 20px;
+    right: 10px
     width: 100%; 
 }
 
