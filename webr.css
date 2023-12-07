@@ -1,4 +1,4 @@
-/* Base styles */
+
 .background {
     background-image: url('https://i.pinimg.com/564x/a9/20/07/a92007200111bcc3404137b180248507.jpg');
     background-size: cover;
@@ -34,7 +34,7 @@ body, html {
 .sidebar {
     background-color: rgba(0, 0, 0);
     padding: 20px;
-    width: 100%; /* Full width on mobile */
+    width: 100%; 
 }
 
 .profile-image {
@@ -58,11 +58,11 @@ body, html {
 }
 
 h1, h2 {
-    text-align: center; /* Center heading for better mobile view */
+    text-align: center; 
 }
 
 h1 {
-    font-size: 2em; /* Relative font size */
+    font-size: 2em; 
 }
 
 h2 {
@@ -74,14 +74,14 @@ h2 {
     font-size: 1em;
 }
 
-/* Media Queries */
+
 @media (min-width: 768px) {
     .resume {
-        display: flex; /* Flex display for larger screens */
+        display: flex;
     }
 
     .sidebar {
-        width: 20%; /* Sidebar takes less space on larger screens */
+        width: 20%;
     }
 
     .main-content {
@@ -89,4 +89,4 @@ h2 {
     }
 }
 
-/* Additional media queries can be added for larger screens */
+
