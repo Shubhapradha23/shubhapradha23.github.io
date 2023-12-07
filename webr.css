@@ -1,55 +1,49 @@
+/* Base styles */
 .background {
     background-image: url('https://i.pinimg.com/564x/a9/20/07/a92007200111bcc3404137b180248507.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: fixed; /* Fixed position to cover the whole page */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    filter: grayscale(100%); /* Converts the image to grayscale */
-    z-index: -1; /* Ensures it stays behind the content */
+    filter: grayscale(100%);
+    z-index: -1;
 }
-
-
 
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Arial', sans-serif;
     color: white;
+    font-family: sans-serif;
 }
 
 .resume {
-    display: flex;
+    display: block; 
     position: relative;
-    top: 50px; /* Adjust as necessary */
+    top: 50px;
     width: 90%;
-    max-width: 1000px; /* Adjust as necessary */
+    max-width: 1000px;
     margin: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar {
-    background-color: rgba(0, 0, 0); /* Slightly see-through black */
+    background-color: rgba(0, 0, 0);
     padding: 20px;
-    width: 250px; /* Adjust as necessary */
+    width: 100%; /* Full width on mobile */
 }
-
 
 .profile-image {
     width: 100%;
-    height: 100%;
-    border-radius: 0%;
-    
     margin-bottom: 20px;
 }
 
 .main-content {
-    background-color: rgba(0, 0, 0, 0.7); /* Slightly see-through black */
-    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
 }
 
@@ -63,20 +57,36 @@ body, html {
     margin-bottom: 10px;
 }
 
+h1, h2 {
+    text-align: center; /* Center heading for better mobile view */
+}
+
 h1 {
-    font-size: 36px;
-    margin-bottom: 0;
+    font-size: 2em; /* Relative font size */
 }
 
 h2 {
-    font-size: 18px;
-    margin-top: 5px;
+    font-size: 1em;
     color: #aaa;
-    margin-bottom: 20px;
-}
-.Languages {
-    font-size: 17px;
-    padding: 16px;
 }
 
-/* Add additional styles for links, lists, and other elements as needed */
+.Languages {
+    font-size: 1em;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .resume {
+        display: flex; /* Flex display for larger screens */
+    }
+
+    .sidebar {
+        width: 20%; /* Sidebar takes less space on larger screens */
+    }
+
+    .main-content {
+        flex-grow: 1;
+    }
+}
+
+/* Additional media queries can be added for larger screens */
