@@ -41,6 +41,7 @@ body, html {
 .profile-image {
     width: 100%;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
 .main-content {
@@ -50,6 +51,7 @@ body, html {
 
 .section {
     margin-bottom: 30px;
+    margin-top: 5px;
 }
 
 .section h3 {
