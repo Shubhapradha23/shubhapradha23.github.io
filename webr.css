@@ -58,12 +58,15 @@ body, html {
     margin-bottom: 10px;
 }
 
-h1, h2, h3 {
+h1, h2 {
     text-align: center; 
 }
 
 h1 {
     font-size: 2em; 
+    font-family: 'Playfair Display', serif;
+}
+h3 {
     font-family: 'Playfair Display', serif;
 }
 
